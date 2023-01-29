@@ -13,3 +13,6 @@ Once this has run successfully, try typing
 
 to check that morpho runs correctly. 
 
+# Contributing 
+
+We welcome suggestions and contributions to improve the installation of morpho. Please use the issues feature or make a pull request. 
