@@ -24,23 +24,8 @@ class Morpho < Formula
 
       bin.install "morpho5"
       (share/"modules").install Dir["modules/*"]
-      #(share/"help").install Dir["docs/*"]
-      #(include).install Dir["**/*.h"]
-    end
-
-    chdir "morphoview" do
-      print Dir["../morpho5"]
-      if OS.mac?
-        if Hardware::CPU.arm?
-          system "make", "-f", "Makefile.m1"
-        else 
-          system "make", "-f", "Makefile"
-        end 
-      else
-        system "make", "-f", "Makefile.linux"
-      end
-
-      bin.install "morphoview"
+      (share/"help").install Dir["docs/*"]
+      (include).install Dir["**/*.h"]
     end
   end
 
