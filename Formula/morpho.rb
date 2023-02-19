@@ -29,6 +29,7 @@ class Morpho < Formula
     end
 
     chdir "morphoview" do
+      print Dir["../morpho5"]
       if OS.mac?
         if Hardware::CPU.arm?
           system "make", "-f", "Makefile.m1"
