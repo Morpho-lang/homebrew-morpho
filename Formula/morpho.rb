@@ -14,17 +14,18 @@ class Morpho < Formula
     chdir "morpho5" do 
       if OS.mac?
         if Hardware::CPU.arm?
-          system "make", "MORPHORESOURCESDIR=#{prefix}" , "-f", "Makefile.m1"
+          system "make", "MORPHORESOURCESDIR=#{prefix}", "-f", "Makefile.m1"
         else 
-          system "make", "-f", "Makefile"
+          system "make", "MORPHORESOURCESDIR=#{prefix}", "-f", "Makefile"
         end 
       else
-        system "make", "-f", "Makefile.linux"
+        system "make", "MORPHORESOURCESDIR=#{prefix}", "-f", "Makefile.linux"
       end
 
       bin.install "morpho5"
       (share/"modules").install Dir["modules/*"]
-      (share/"docs").install Dir["docs/*"]
+      (share/"help").install Dir["docs/*"]
+      (include).install Dir["**/*.h"]
     end
 
     chdir "morphoview" do
