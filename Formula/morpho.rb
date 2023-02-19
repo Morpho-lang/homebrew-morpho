@@ -14,7 +14,7 @@ class Morpho < Formula
     chdir "morpho5" do 
       if OS.mac?
         if Hardware::CPU.arm?
-          system "make", "-f", "Makefile.m1"
+          system "make", "MORPHORESOURCESDIR=#{prefix}" , "-f", "Makefile.m1"
         else 
           system "make", "-f", "Makefile"
         end 
