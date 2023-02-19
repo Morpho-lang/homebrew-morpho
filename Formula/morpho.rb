@@ -29,7 +29,7 @@ class Morpho < Formula
     end
 
     chdir "morphoview" do
-      ENV["CPATH"] += include
+      #ENV["CPATH"] = include
       print ENV["CPATH"]
       if OS.mac?
         if Hardware::CPU.arm?
