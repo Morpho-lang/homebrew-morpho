@@ -30,7 +30,6 @@ class Morpho < Formula
 
     chdir "morphoview" do
       ENV["CPATH"] = "#{include}"
-      system "echo", "$CPATH"
       if OS.mac?
         if Hardware::CPU.arm?
           system "make", "-f", "Makefile.m1"
