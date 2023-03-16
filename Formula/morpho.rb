@@ -25,7 +25,7 @@ class Morpho < Formula
       bin.install "morpho5"
       (share/"modules").install Dir["modules/*"]
       (share/"help").install Dir["docs/*"]
-      (include).install Dir["**/*.h"]
+      (include/"morpho").install Dir["**/*.h"]
     end
 
     chdir "morphoview" do
