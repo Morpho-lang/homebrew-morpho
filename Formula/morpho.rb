@@ -29,18 +29,18 @@ class Morpho < Formula
     end
 
     chdir "morphoview" do
-      ENV["CPATH"] = "#{include}" # Make sure header files are visible in include path 
+      ENV["CPATH"] = "#{include}/morpho" # Make sure header files are visible in include path 
       if OS.mac?
         if Hardware::CPU.arm?
-          #system "make", "-f", "Makefile.m1"
+          system "make", "-f", "Makefile.m1"
         else 
-          #system "make", "-f", "Makefile"
+          system "make", "-f", "Makefile"
         end 
       else
-        #system "make", "-f", "Makefile.linux"
+        system "make", "-f", "Makefile.linux"
       end
 
-      #bin.install "morphoview"
+      bin.install "morphoview"
     end
   end
 
