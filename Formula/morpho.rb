@@ -1,8 +1,8 @@
 class Morpho < Formula
   desc "The Morpho language. Morpho is a small embeddable language for scientific computing applications."
   homepage "https://github.com/Morpho-lang/morpho"
-  url "https://github.com/Morpho-lang/morpho/archive/refs/tags/v0.5.6.tar.gz"
-  sha256 "95271f34c368336795ed4ce7dffc1b38d1506d32866ef8d99291edee3309a3e8"
+  url "https://github.com/Morpho-lang/morpho/archive/refs/tags/v0.5.7.tar.gz"
+  sha256 "a3e4c0e4fb119a6a081a25178d00cb03959767c28ce1e2ffcff280f5e89979d2"
   license "MIT"
 
   depends_on "glfw" 
