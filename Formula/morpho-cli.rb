@@ -6,10 +6,12 @@ class MorphoCli < Formula
   license "MIT"
 
   depends_on "libgrapheme"
+  depends_on "cmake"
 
   def install
+    Dir.mkdir("build")
     chdir "build" do 
-      system "cmake .."
+      system "cmake", "..", *std_cmake_args
       system "make"
 
       bin.install "morpho6"
