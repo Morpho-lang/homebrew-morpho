@@ -8,7 +8,6 @@ class MorphoCli < Formula
   depends_on "libgrapheme"
 
   def install
-    Dir.mkdir("build")
     chdir "build" do 
       system "cmake .."
       system "make"
