@@ -10,7 +10,7 @@ class MorphoCli < Formula
   def install
     Dir.mkdir("build")
     chdir "build" do 
-      system "cmake", "-DCMAKE_BUILD_TYPE=Release", "-DMORPHORESOURCESDIR=#{prefix}", ".."
+      system "cmake .."
       system "make"
 
       bin.install "morpho6"
