@@ -1,4 +1,4 @@
-class Morpho_CLI < Formula
+class MorphoCli < Formula
   desc "Morpho-cli. A terminal application for the morpho language"
   homepage "https://github.com/morpho-lang/morpho-cli"
   url "https://github.com/Morpho-lang/morpho-cli/archive/refs/tags/v0.6.0-alpha.tar.gz"
