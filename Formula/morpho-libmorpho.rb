@@ -20,9 +20,9 @@ class MorphoLibmorpho < Formula
       system "make install"
     end
 
-    (share/"modules").install Dir["modules/*"]
-    (share/"help").install Dir["help/*"]
-    (include/"morpho").install Dir["src/**/*.h"]
+    #(share/"modules").install Dir["modules/*"]
+    #(share/"help").install Dir["help/*"]
+    #(include/"morpho").install Dir["src/**/*.h"]
   end
 
   test do
