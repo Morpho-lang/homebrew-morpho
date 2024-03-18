@@ -1,4 +1,4 @@
-class MorphoLibMorpho < Formula
+class MorphoLibmorpho < Formula
   desc "Morpho-libmorpho. Morpho built as a shared library."
   homepage "https://github.com/Morpho-lang/morpho-libmorpho"
   url "https://github.com/Morpho-lang/morpho-libmorpho/archive/refs/tags/v0.6.0-alpha.tar.gz"
