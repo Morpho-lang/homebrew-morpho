@@ -6,6 +6,7 @@ class MorphoLibmorpho < Formula
   license "MIT"
 
   depends_on "cmake" => :build
+  depends_on "suitesparse"
 
   def install
     mkdir "build" do
