@@ -1,11 +1,12 @@
 class MorphoCli < Formula
   desc "Morpho-cli. A terminal application for the morpho language"
   homepage "https://github.com/morpho-lang/morpho-cli"
-  url "https://github.com/Morpho-lang/morpho-cli/archive/refs/tags/v0.6.0-alpha3.tar.gz"
-  sha256 "91feca2ea3718e146a2c12f3053ba8c7b8046761c1de5614b4b8bed74e804954"
+  url "https://github.com/Morpho-lang/morpho-cli/archive/refs/tags/v0.6.0-alpha4.tar.gz"
+  sha256 "1ac990084ada850c16eff10680bcf2d05f296006ac68fef5973cd15cd014498b"
   license "MIT"
 
   depends_on "libgrapheme" => :recommended
+  depends_on "libunistring" => :recommended
   depends_on "cmake" => :build
   depends_on "morpho-libmorpho"
 
