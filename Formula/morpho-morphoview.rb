@@ -1,8 +1,8 @@
 class MorphoMorphoview < Formula
   desc "Morpho-morphoview. A viewer application for the morpho language"
   homepage "https://github.com/morpho-lang/morpho-morphoview"
-  url "https://github.com/Morpho-lang/morpho-morphoview/archive/refs/tags/v0.6.0-alpha2.tar.gz"
-  sha256 "22692107c0a68af9de86ac09e543f3f5f11bfd4163493497381fc0096119167c"
+  url "https://github.com/Morpho-lang/morpho-morphoview/archive/refs/tags/v0.6.0-alpha3.tar.gz"
+  sha256 "312329b79803324805e88acbae3cac982518b28f6b1925c78e6fc0cac2a33bda"
   license "MIT"
 
   depends_on "cmake" => :build
