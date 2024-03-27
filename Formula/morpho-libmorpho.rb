@@ -13,7 +13,7 @@ class MorphoLibmorpho < Formula
       args = std_cmake_args
       args.delete "-DCMAKE_BUILD_TYPE=None"
       args << "-DCMAKE_BUILD_TYPE=Release"
-      args << "-DMORPHORESOURCESDIR=#{prefix}"
+      args << "-DMORPHO_RESOURCESDIR=#{prefix}"
       args << "-DCMAKE_INSTALL_RPATH=#{rpath}"
       args << ".."
       system "cmake", *args
