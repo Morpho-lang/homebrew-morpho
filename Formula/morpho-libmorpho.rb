@@ -1,8 +1,8 @@
 class MorphoLibmorpho < Formula
   desc "Morpho-libmorpho. Morpho built as a shared library."
   homepage "https://github.com/Morpho-lang/morpho-libmorpho"
-  url "https://github.com/Morpho-lang/morpho-libmorpho/archive/refs/tags/v0.6.0-alpha3.tar.gz"
-  sha256 "66f7e9f8463dfef4500451d0d5c85016e10024c88639482eca4ff360a351ff9f"
+  url "https://github.com/Morpho-lang/morpho-libmorpho/archive/refs/tags/v0.6.0-alpha4.tar.gz"
+  sha256 "142406e9d90124d6f749a241863b771b8c6adc7aeb5394529f9db90d8d8ee495"
   license "MIT"
 
   depends_on "cmake" => :build
