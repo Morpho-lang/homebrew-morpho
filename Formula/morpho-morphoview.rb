@@ -6,7 +6,7 @@ class MorphoMorphoview < Formula
   license "MIT"
 
   depends_on "cmake" => :build
-  depends_on "morpho-libmorpho"
+  depends_on "morpho"
 
   depends_on "glfw" 
   depends_on "freetype"

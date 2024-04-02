@@ -8,7 +8,7 @@ class MorphoCli < Formula
   depends_on "libgrapheme" => :recommended
   depends_on "libunistring" => :recommended
   depends_on "cmake" => :build
-  depends_on "morpho-libmorpho"
+  depends_on "morpho"
 
   def install
     mkdir "build" do
