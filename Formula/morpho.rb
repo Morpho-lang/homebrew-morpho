@@ -10,9 +10,7 @@ class Morpho < Formula
   depends_on "morpho-morphoview"
 
   def install
-    (testpath/"hello.morpho").write <<~EOS
-      print "Hello, world!"
-    EOS
+    system "ls"
   end
 
   test do
