@@ -2,7 +2,7 @@ class MorphoMorphopm < Formula
   desc "Morpho-morphom. Simple package manager for the morpho language"
   homepage "https://github.com/morpho-lang/morpho-morphopm"
   url "https://github.com/Morpho-lang/morpho-morphopm/archive/refs/tags/v0.1.0-alpha2.tar.gz"
-  sha256 "ececdbf1b251b5f4e908207feefc424416b68f03adcc8cd6d9582b539b5231a2"
+  sha256 "605424edebb13759733be37e06d8757ee2dedd1e65c3d161ee72404224945693"
   license "MIT"
 
   depends_on "cmake" 
