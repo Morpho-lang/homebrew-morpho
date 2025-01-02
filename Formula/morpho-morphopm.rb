@@ -12,6 +12,10 @@ class MorphoMorphopm < Formula
     (share/"packages").install Dir["packages/*"]
   end
 
+  def post_install 
+    run ["echo", share/"modules"]
+  end 
+
   test do
     assert_equal "0.1.0", shell_output("#{bin}/morphopm version").strip.gsub(/\e\[(\d+)(;\d+)*m/, '') # Remove terminal codes
   end
