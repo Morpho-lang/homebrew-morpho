@@ -9,11 +9,11 @@ class MorphoMorphopm < Formula
 
   def install
     bin.install "morphopm"
-    (share/"packages").install Dir["packages/*"]
+    (share/"morphopm").install Dir["packages/*"]
   end
 
   def post_install 
-    system "morphopm setdatabase", share/"modules"
+    system "morphopm setdatabase", share/"morphopm"
   end 
 
   test do
