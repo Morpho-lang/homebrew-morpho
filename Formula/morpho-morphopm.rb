@@ -1,4 +1,4 @@
-class Morphopm < Formula
+class MorphoMorphopm < Formula
   desc "Morpho-morphom. Simple package manager for the morpho language"
   homepage "https://github.com/morpho-lang/morpho-morphopm"
   url "https://github.com/Morpho-lang/morpho-morphopm/archive/refs/tags/v0.0.1.tar.gz"
