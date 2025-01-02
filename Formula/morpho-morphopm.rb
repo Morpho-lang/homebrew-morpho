@@ -13,7 +13,7 @@ class MorphoMorphopm < Formula
   end
 
   def post_install 
-    system "echo", share/"modules"
+    system "morphopm setdatabase", share/"modules"
   end 
 
   test do
