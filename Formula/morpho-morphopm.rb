@@ -6,8 +6,6 @@ class Morphopm < Formula
   license "MIT"
 
   depends_on "cmake" 
-  depends_on "morpho"
-  depends_on "morpho"
 
   def install
     bin.install "morphopm"
