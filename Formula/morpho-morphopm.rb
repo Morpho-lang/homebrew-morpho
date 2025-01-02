@@ -1,7 +1,7 @@
 class MorphoMorphopm < Formula
   desc "Morpho-morphom. Simple package manager for the morpho language"
   homepage "https://github.com/morpho-lang/morpho-morphopm"
-  url "https://github.com/Morpho-lang/morpho-morphopm/archive/refs/tags/v0.1.0-alpha.tar.gz"
+  url "https://github.com/Morpho-lang/morpho-morphopm/archive/refs/tags/v0.1.0-alpha2.tar.gz"
   sha256 "ececdbf1b251b5f4e908207feefc424416b68f03adcc8cd6d9582b539b5231a2"
   license "MIT"
 
