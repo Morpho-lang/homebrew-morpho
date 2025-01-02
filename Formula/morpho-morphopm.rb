@@ -13,7 +13,7 @@ class MorphoMorphopm < Formula
   end
 
   def post_install 
-    run ["echo", share/"modules"]
+    system "echo", share/"modules"
   end 
 
   test do
