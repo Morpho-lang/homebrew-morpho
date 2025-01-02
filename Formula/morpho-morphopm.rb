@@ -9,6 +9,7 @@ class MorphoMorphopm < Formula
 
   def install
     bin.install "morphopm"
+    (share/"packages").install Dir["packages/*"]
   end
 
   test do
