@@ -1,7 +1,7 @@
 class MorphoCli < Formula
   desc "Morpho-cli. A terminal application for the morpho language"
   homepage "https://github.com/morpho-lang/morpho-cli"
-  url "https://github.com/Morpho-lang/morpho-cli/archive/refs/tags/v0.6.1-alpha.tar.gz"
+  url "https://github.com/Morpho-lang/morpho-cli/archive/refs/tags/v0.6.2-alpha2.tar.gz"
   sha256 "f48166496c118bb7bd2296ae1e8b4a510acffc477097072058910453f191baaf"
   license "MIT"
 
