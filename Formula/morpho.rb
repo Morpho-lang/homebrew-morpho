@@ -2,7 +2,7 @@ class Morpho < Formula
   desc "The morpho language built as a shared library."
   homepage "https://github.com/Morpho-lang/morpho"
   url "https://github.com/Morpho-lang/morpho/archive/refs/tags/v0.6.2.tar.gz"
-  sha256 "3fc1cd3c1eb396ba294f7d28b49191d13b7eb2b4dac584cab14091ad8538a86d"
+  sha256 "ee969d58088cd40d7ce5706db50a36cbffb4eb9e58f71b8074d9ead8018221e2"
   license "MIT"
 
   depends_on "cmake" => :build
