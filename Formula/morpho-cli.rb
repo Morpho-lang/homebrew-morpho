@@ -11,14 +11,9 @@ class MorphoCli < Formula
   depends_on "morpho"
 
   def install
-    mkdir "build" do
-      args = std_cmake_args
-      args.delete "-DCMAKE_BUILD_TYPE=None"
-      args << "-DCMAKE_BUILD_TYPE=Release"
-      args << ".."
-      system "cmake", *args
-      system "make install"
-    end
+    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    system "cmake", "--build", "build"
+    system "cmake", "--install", "build"
   end
 
   test do

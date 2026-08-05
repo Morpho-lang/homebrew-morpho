@@ -9,17 +9,14 @@ class Morpho < Formula
   depends_on "suitesparse"
 
   def install
-    mkdir "build" do
-      args = std_cmake_args
-      args.delete "-DCMAKE_BUILD_TYPE=None"
-      args << "-DCMAKE_BUILD_TYPE=Release"
-      args << "-DMORPHO_HELP_BASEDIR=#{share}/morpho/help"
-      args << "-DMORPHO_MODULE_BASEDIR=#{share}/morpho/modules"
-      args << "-DCMAKE_INSTALL_RPATH=#{rpath}"
-      args << ".."
-      system "cmake", *args
-      system "make install"
-    end
+    args = [
+      "-DMORPHO_HELP_BASEDIR=#{share}/morpho/help",
+      "-DMORPHO_MODULE_BASEDIR=#{share}/morpho/modules",
+      "-DCMAKE_INSTALL_RPATH=#{rpath}",
+    ]
+    system "cmake", "-S", ".", "-B", "build", *std_cmake_args, *args
+    system "cmake", "--build", "build"
+    system "cmake", "--install", "build"
   end
 
   test do
