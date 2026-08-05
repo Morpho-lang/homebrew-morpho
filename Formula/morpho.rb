@@ -1,5 +1,5 @@
 class Morpho < Formula
-  desc "The morpho language built as a shared library."
+  desc "Shared library for the Morpho programming language"
   homepage "https://github.com/Morpho-lang/morpho"
   url "https://github.com/Morpho-lang/morpho/archive/refs/tags/v0.6.4.tar.gz"
   sha256 "4157851961b22be1890ad1d302637fc2d5a288892f44e26fefdd3236e659da72"
@@ -20,6 +20,6 @@ class Morpho < Formula
   end
 
   test do
-    
+    assert_path_exists include/"morpho/morpho.h"
   end
 end
