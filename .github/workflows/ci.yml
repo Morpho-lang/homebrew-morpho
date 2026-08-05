@@ -38,7 +38,13 @@ jobs:
       fail-fast: false
       matrix:
         os: [macos-latest, macos-26]
+        include:
+          - os: ubuntu-latest
+            container:
+              image: ghcr.io/homebrew/brew:main
+              options: --privileged
     runs-on: ${{ matrix.os }}
+    container: ${{ fromJSON(toJSON(matrix.container)) }}
     timeout-minutes: 120
     steps:
       - name: Set up Homebrew
