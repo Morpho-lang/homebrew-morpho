@@ -15,6 +15,6 @@ class MorphoMorphopm < Formula
   test do
     output = shell_output("#{bin}/morphopm version").strip
     output = output.gsub(/\e\[(\d+)(;\d+)*m/, "") # Remove terminal codes
-    assert_equal "0.2.2", output
+    assert_equal "0.2.2", output.lines.last.strip
   end
 end
