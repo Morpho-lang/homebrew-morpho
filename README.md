@@ -1,6 +1,7 @@
+![Morpho](https://github.com/Morpho-lang/morpho-manual/blob/main/src/Figures/morphologosmall.png#gh-light-mode-only)![Morpho](https://github.com/Morpho-lang/morpho-manual/blob/main/src/Figures/morphologosmall-white.png#gh-dark-mode-only)
 # homebrew-morpho
 
-This tap provides convenient installation of [the morpho language 🦋](https://github.com/Morpho-lang/morpho).
+This tap provides convenient installation of the [ morpho](https://github.com/Morpho-lang/morpho)  language.
 
 To install morpho, first install the [homebrew environment](https://brew.sh). A complete working installation of morpho can be performed using the `morpho-all` package. This installs the morpho, the terminal app and morphopm package member and important morphopm packages together using the `morpho-all` package: 
 
