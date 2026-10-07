@@ -65,23 +65,25 @@ jobs:
           brew install --build-from-source \
             morpho \
             morpho-cli \
-            morpho-morphoview \
-            morpho-morphopm
+            morpho-morphopm \
+            morpho-all
 
       - name: Run formula tests
         run: |
           brew test --verbose morpho
           brew test --verbose morpho-cli
-          brew test --verbose morpho-morphoview
           brew test --verbose morpho-morphopm
+          brew test --verbose morpho-all
 
       - name: Smoke-check installed binaries
         run: |
           test -f "$(brew --prefix)/include/morpho/morpho.h"
+          test -f "$(brew --prefix)/lib/cmake/morpho/morphoConfig.cmake"
           test -x "$(brew --prefix)/bin/morpho6"
-          test -x "$(brew --prefix)/bin/morphoview"
           test -x "$(brew --prefix)/bin/morphopm"
+          test -x "$(brew --prefix)/bin/morpho-all"
 
+          morpho6 --version | grep -F "0.6.5"
           morphopm version
           printf 'print "CI ok"\n' > hello.morpho
           morpho6 hello.morpho | grep -F "CI ok"

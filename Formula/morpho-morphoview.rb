@@ -1,14 +1,20 @@
 class MorphoMorphoview < Formula
-  desc "Viewer application for the morpho language"
+  desc "Legacy viewer application for the morpho language"
   homepage "https://github.com/morpho-lang/morpho-morphoview"
   url "https://github.com/Morpho-lang/morpho-morphoview/archive/refs/tags/v0.6.0-alpha3.tar.gz"
   sha256 "312329b79803324805e88acbae3cac982518b28f6b1925c78e6fc0cac2a33bda"
   license "MIT"
 
+  disable! date:    "2027-04-07",
+           because: "is now installed with morphopm (`morphopm install morphoview`)"
+
+  # The old build searches standard prefixes for an existing Morpho instead of
+  # declaring a dependency, so this formula does not install or upgrade morpho.
+  env :std
+
   depends_on "cmake" => :build
   depends_on "freetype"
   depends_on "glfw"
-  depends_on "morpho"
   depends_on "povray"
 
   def install
